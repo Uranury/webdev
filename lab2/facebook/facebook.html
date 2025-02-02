@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 170%;
+            background-color: rgb(240, 240, 240);
+        }
+        #text-block {
+            margin-left: 20%;
+            margin-top: 10%;
+        }
+        #text-block h2 {
+            margin-bottom: 0%;
+            color: rgb(67, 97, 231);
+            font-size: 70px;
+            font-family: 'Facebook Sans', 'Nunito Sans', Helvetica;
+        }
+        #inner-text-block {
+            margin-top: 0%;
+        }
+        p {
+            margin-top: 10px;
+        }
+        #login-block {
+            position: absolute;
+            left: 55%;
+            top: 15%;
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            width: 350px;
+    
+        }
+        #login-block input {
+            margin-bottom: 5px;
+
+        }
+        input {
+            width: 330px;
+            height: 40px;
+            border-radius: 5px;
+            border: 1px solid rgb(220, 220, 220);
+            padding-left: 10px;
+        }
+        
+        #vhod {
+            margin-top: 10px;
+            width: 345px;
+            height: 40px;
+            background-color: blueviolet;
+            color: white;
+            border:rgb(230, 230, 230);
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        
+        .input-div {
+            margin-bottom: 5px;
+        }
+
+        a {
+            font-size: 0.45em;
+            text-decoration: none;
+            color: blue;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background-color: rgb(230, 230, 230);  /* Very light gray */
+            margin: 20px 0;
+        }
+
+        #end {
+            font-size: 13px;
+            margin-top: 30px;
+            position: absolute;
+            left: 56%;
+            top: 50%;
+            text-align: center;
+
+        }
+
+        #create {
+            margin-top: 10px;
+            margin-bottom: 15px;
+            background-color: rgb(25, 179, 38);
+            color: white;
+            border: white;
+            height: 40px;
+            border-radius: 5px;
+            width: 150px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            font-size: 14px;
+            color: gray;
+            padding: 10px 0;
+            border-top: 1px solid #ddd;
+            text-align: left;
+        }
+
+        .footer-content {
+            margin-bottom: 15px;
+            margin-left: 30px;
+        }
+
+        #add {
+            font-size: 15px;
+            height: 30px;
+            width: 40px;
+            margin-bottom: 0px;
+        }
+
+        #under-footer {
+            position: relative;
+            left: 18.5%;
+            width: 63%;
+        }
+
+        #long-p {
+            position: relative;
+            text-align: left;
+            left: 17%;
+            word-spacing: 10px;
+            line-height: 1.8;
+        }
+        
+        #languages {
+            word-spacing: 5px;
+            position: relative;
+            left: 17%;
+        }
+
+        #credits {
+            text-align: left;
+            position: relative;
+            left: 17%;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id = "text-block">
+        <h2><strong>facebook</strong></h2>
+        <div id = "inner-text-block">
+            <p> Facebook помогает вам всегда<br> оставаться на связи и общаться со <br> своими знакомыми. </p>
+        </div>
+    </div>
+    <div id = "login-block"> 
+        <div id = "input-block"> 
+            <div class="input-div"><input type="text" placeholder="Электронный адрес или номер телефона"><br></div>
+            <div class="input-div"><input type="text" placeholder="Пароль"></div>
+        </div>
+        <button id = "vhod"> <strong>Вход</strong> </button> <br>
+        <a href="#"> Забыли пароль? </a>
+        <hr>
+        <button id = "create"> Создать аккаунт </button>
+    </div>
+    <div>
+        <p id = "end"> <strong>Создать Страницу</strong> знаменитости, музыкальной группы <br> или компании. </p>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content" id = "languages">Русский Türkçe English (US) Bahasa Indonesia Қазақша 中文 Deutsch 한국어 Sqhip Español Português (Brasil) 
+                <button id= "add">＋</button> 
+            </div>
+            <hr id = "under-footer">
+            <div class="footer-content" id = "long-p">Регистрация Вход Messenger Facebook Lite Watch Люди Страницы Категории Страниц Места Игры Места Marketplace<br> Facebook Pay Группы Вакансии Oculus Portal Instagram Местные Благотворительные акции Услуги Центр Информации о голосовании<br> О нас Создать рекламу Создать Страницу Разработчикам Вакансии Конфиденциальность Файлы cookie Выбор рекламы<br> Условия использования Справка </div>
+            <div class="footer-content" id = "credits">Facebook (c) 2021</div>
+        </div>
+    </footer>
+</body>
+</html>
