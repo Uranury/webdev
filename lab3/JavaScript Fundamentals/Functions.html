@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+        function checkAge(age) {
+            if (age > 18) {
+                return true;
+            }
+            //will work
+            return confirm('Did parents allow you?');
+        }
+
+        //task 2
+        function checkAge(age) {
+            return age > 18 || confirm('Did parents allow you?');
+        }
+        checkAge(10);
+
+        //task 3
+        function min(first, second){
+            return  first<second? first: second;
+        }
+        min(2, 5) == 2
+        min(3, -1) == -1
+        min(1, 1) == 1
+
+        //task 4
+        function pow(num, power){
+            return  num ** power;
+        }
+        pow(3, 2);
+        pow(3, 3);
+        pow(1, 100);
+    </script>
+</body>
+</html>
