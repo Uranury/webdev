@@ -1,0 +1,40 @@
+<div class="Head">
+    <div *ngFor="let p of products">
+        <div class="container">
+            <div class="img-wrapper">
+                <img 
+                    [src]="p.img" 
+                    [alt]="p.name">
+            </div>
+
+            <div class="product-name-info">
+                <a [href]="p.link" [title]="p.name">{{p.name}}</a>
+            </div>
+
+            <div class="description-info">
+                <p *ngIf="p.description">
+                    <span>Description: </span>
+                    <span>{{p.description}}</span>
+                </p>
+            </div>
+
+            <div class="price-info">
+                <span id = "price">Price </span><br>
+                <span>{{p.price}}₸</span>
+            </div>
+
+            <div class="rating-info">
+                <ngb-rating
+                [(rate)]="p.rating"
+                [max]="5"
+                [readonly]="true">
+                </ngb-rating>
+            </div>
+
+            <div class="share-button">
+                <button type="button" (click)="shareWA(p.name, p.link)">Whatsapp</button>
+                <button type="button" (click)="shareTG(p.name, p.link)">Telegram</button>
+        </div>
+        </div>
+    </div>
+</div>
