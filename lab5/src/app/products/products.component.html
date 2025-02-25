@@ -1,7 +1,7 @@
 <h2 id = "header"> Products </h2>
 
 <div class="Head">
-    <div *ngFor="let p of products">
+    <div *ngFor="let p of products()">
         <div class="container">
             <div class="img-wrapper">
                 <img 
@@ -10,14 +10,7 @@
             </div>
 
             <div class="product-name-info">
-                <a [href]="p.link" [title]="p.name">{{p.name}}</a>
-            </div>
-
-            <div class="description-info">
-                <p *ngIf="p.description">
-                    <span>Description: </span>
-                    <span>{{p.description}}</span>
-                </p>
+                <a [routerLink]="['/details', p.id]" [title]="p.name">{{p.name}}</a>
             </div>
 
             <div class="price-info">
@@ -34,9 +27,18 @@
             </div>
 
             <div class="share-button">
-                <button type="button" (click)="shareWA(p.name, p.link)">Whatsapp</button>
-                <button type="button" (click)="shareTG(p.name, p.link)">Telegram</button>
-        </div>
+                <button type="button" (click)="shareWA(p.name)">Whatsapp</button>
+                <button type="button" (click)="shareTG(p.name)">Telegram</button>
+            </div>
+
+            <div class="buttons">
+                <button type="button" (click)="IncreaseLikes(p)">Like</button>
+                <button type="button" (click)="removeProduct(p)">Remove</button>
+            </div>
+
+            <div class="show-likes">
+                <span> {{p.likes}} </span>
+            </div>
         </div>
     </div>
 </div>

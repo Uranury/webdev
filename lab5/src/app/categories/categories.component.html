@@ -1,0 +1,10 @@
+<div class="container">
+    <div class="header">
+        <h1>Select Category</h1>
+    </div>
+    <div class="categories-list">
+        <ul *ngFor="let c of categories">
+            <li><a [routerLink]="['/categories', c.id]"> {{c.name}} </a></li>
+        </ul>
+    </div>
+</div>
