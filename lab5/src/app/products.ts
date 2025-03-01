@@ -16,7 +16,7 @@ export const products = [
       id: 12,
       name: 'Bella cotton pads Cotton 120 pcs',
       price: 700,
-      description: 'Soft, gentle pads made of 100% cotton, very absorbent, hypoallergenic.',
+      description: 'Softt, gentle pads made of 100% cotton, very absorbent, hypoallergenic.',
       img: 'https://resources.cdn-kaspi.kz/img/m/p/h15/hce/63887012495390.jpg?format=gallery-large',
       rating: 4,
       category: 5,
