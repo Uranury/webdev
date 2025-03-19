@@ -8,7 +8,7 @@ import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-products',
-  imports: [NgFor, NgIf, NgbRatingModule, RouterLink],
+  imports: [NgFor, NgbRatingModule, RouterLink],
   templateUrl: './products.component.html',
   styleUrl: './products.component.css'
 })
