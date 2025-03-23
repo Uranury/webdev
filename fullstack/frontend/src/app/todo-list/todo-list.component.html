@@ -1,0 +1,5 @@
+<div *ngFor="let todo of todos">
+    <h3>{{ todo.title }}</h3>
+    <p>Completed: {{ todo.completed }}</p>
+    <button (click)="deleteTodo(todo.id!)">Delete</button>
+  </div>
