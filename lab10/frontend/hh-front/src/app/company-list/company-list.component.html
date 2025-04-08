@@ -1,0 +1,6 @@
+<div *ngFor="let c of companies">
+    <h1 (click)="showVacancies(c.id)">{{c.name}}</h1>
+    <div *ngIf="company_id === c.id!">
+        <app-vacancy-list [companyID]="c.id"></app-vacancy-list>
+    </div>
+</div>

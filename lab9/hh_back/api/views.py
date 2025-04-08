@@ -1,8 +1,8 @@
 from rest_framework import generics
 from rest_framework.response import Response
 from django.shortcuts import get_object_or_404
-from .models import Company, Vacancy
-from .serializers import CompanySerializer, VacancySerializer
+from .models import Company, Vacancy, Position
+from .serializers import CompanySerializer, VacancySerializer, PositionSerializer
 
 # a) List all companies
 class CompanyListView(generics.ListCreateAPIView):
@@ -38,3 +38,11 @@ class TopTenVacanciesView(generics.ListAPIView):
 
     def get_queryset(self):
         return Vacancy.objects.order_by('-salary')[:10]
+
+class PositionListView(generics.ListCreateAPIView):
+    queryset = Position.objects.all()
+    serializer_class = PositionSerializer
+
+class PositionDetailView(generics.RetrieveAPIView):
+    queryset = Position.objects.all()
+    serializer_class = PositionSerializer

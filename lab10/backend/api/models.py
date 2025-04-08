@@ -25,7 +25,7 @@ class Vacancy(models.Model):
     position = models.ForeignKey(Position, on_delete=models.CASCADE, null=True)
 
     def __str__(self):
-        return self.name
+        return f"{self.company.name} - {self.salary}"
 
 
     
